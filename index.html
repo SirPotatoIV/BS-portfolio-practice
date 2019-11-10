@@ -14,7 +14,8 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-secondary">
+    <!-- -dark and bg-secondary used to change color. bottom border with border-bottom. border black with border dark. -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-secondary border-bottom border-dark">
         <!-- ml-5 used to shift the logo to the right. px-3 used to add padding to the right and left of the text. https://getbootstrap.com/docs/4.3/utilities/spacing/ -->
         <a class="navbar-brand bg-dark rounded ml-5 px-3" href="index.html">Jake O'Toole</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,12 +23,14 @@
         </button>
         <!-- Used class justify-content-end to get links and collapse menu to the right side https://getbootstrap.com/docs/4.3/layout/grid/ -->
         <div class="collapse navbar-collapse justify-content-end pr-5" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav m-1">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html">About<span class="sr-only">(current)</span></a>
+              <!-- Added border to right with border-right -->
+              <a class="nav-link border-right" href="index.html">About<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="portfolio.html">Portfolio</a>
+              <!-- Added border to right with border-right -->
+              <a class="nav-link border-right" href="portfolio.html">Portfolio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
@@ -37,7 +40,7 @@
       </nav>
     <!-- Main container for content of page -->
     <!-- How to add margin and padding. Used class m-5. Note: documentations recommends not to use top-margin (class mt-#) https://getbootstrap.com/docs/4.3/utilities/spacing/ -->
-    <div class="container m-5">
+    <div class="container shadow m-5 bg-secondary">
         <!-- Row 1 -->
         <!-- How to add border https://getbootstrap.com/docs/4.3/utilities/borders/ -->
         <div class="row m-3">
@@ -56,7 +59,7 @@
             </div>
             <!-- One of two columns -->
             <div class="col-md-8">
-                <p>
+                <p class="text-black">
                     I grew up thinking I'd be an engineer, which progressed to wanting to engineer medical devices. 
                     I went on to get a degree in biomedical engineering and work in the field of medical device R&amp;D 
                     for 6 years. Over those 6 years I realized I was wrong growing up. The life of an engineer who
@@ -71,7 +74,7 @@
         <div class="row m-3">
             <!-- One of one column -->
             <div class="col-md-12">
-                <p>
+                <p class="text-black">
                     When I'm not working diligently to pursue a new career I enjoy Curling, hanging out with my wife
                     and dog, exploring the Twin Cities, and learning how to make physical things. I have hobby aspirations
                     to learn more about saws, routers, nail guns, CNC's, and all other sorts of tools that could help me make
@@ -86,7 +89,7 @@
         <!-- Used class container-fluid to make footer full width of screen https://getbootstrap.com/docs/4.3/layout/overview/ -->
         <div class="container-fluid">
             <!-- Row 1 -->
-            <div class="row">
+            <div class="row border-top border-dark">
                 <!-- Used class text-center to center the text, text-white to make the text white, bg-dark to make the background dark, align-middle to make the text align vertically -->
                 <!-- One of one column -->
                 <div class="col-sm-12 text-center text-white bg-dark align-middle">
