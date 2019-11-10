@@ -12,4 +12,4 @@ Contributing: I was the only one to work on this project.
 
 Challenges: I struggled early on with the sticky footer due to not adding the bootstrap scripts for the javascript code.
 
-Live site: #
+Live site: https://sirpotatoiv.github.io/BS-portfolio-practice/
