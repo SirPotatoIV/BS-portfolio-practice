@@ -40,13 +40,14 @@
         <!-- How to add border https://getbootstrap.com/docs/4.3/utilities/borders/ -->
         <div class="row m-3">
             <div class="col-md-12 border-bottom border-dark">
-                <h1>About Me</h1>
+                <h1 class="display-4">About Me</h1>
             </div>
         </div>
         <!-- Row 2 -->
         <div class="row m-3">
             <div class="col-md-4">
-                <img src="assets/images/profile-pic.jpg" alt="Profile picture of creator of website."/>
+                <!-- How to make image responsive https://getbootstrap.com/docs/4.3/content/images/ -->
+                <img src="assets/images/profile-pic.jpg" class="img-fluid" alt="Profile picture of creator of website."/>
             </div>
             <div class="col-md-8">
                 <p>
@@ -75,10 +76,10 @@
     </div>
     <!-- Footer. Found out that the bootstrap scripts for javascript are required for this to work. Scripts must be inside of body element. https://getbootstrap.com/docs/4.3/utilities/position/#fixed-bottom-->
     <footer class="fixed-bottom">
-        <div class="container ">
+        <div class="container">
             <div class="row">
-                <div class="col-sm-12 text-center m-3">
-                    <p>&copy; Copyright Jake O'Toole</p>
+                <div class="col-sm-12 text-center  text-white bg-dark align-middle">
+                    &copy; Copyright Jake O'Toole
                 </div>
             </div>
         </div>
