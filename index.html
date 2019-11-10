@@ -14,13 +14,13 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html">Jake O'Toole</a>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark container-fluid">
+        <a class="navbar-brand pl-5 ml-4" href="index.html">Jake O'Toole</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <!-- Used class justify-content-end to get links and collapse menu to the right side https://getbootstrap.com/docs/4.3/layout/grid/ -->
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <div class="collapse navbar-collapse justify-content-end pr-5" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
               <a class="nav-link" href="index.html">About<span class="sr-only">(current)</span></a>
@@ -32,7 +32,7 @@
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
-        </div>
+          </div>
       </nav>
     <!-- Main container for content of page -->
     <!-- How to add margin and padding. Used class m-5. Note: documentations recommends not to use top-margin (class mt-#) https://getbootstrap.com/docs/4.3/utilities/spacing/ -->
@@ -40,6 +40,7 @@
         <!-- Row 1 -->
         <!-- How to add border https://getbootstrap.com/docs/4.3/utilities/borders/ -->
         <div class="row m-3">
+            <!-- One of one column -->
             <div class="col-md-12 border-bottom border-dark">
                 <!-- Different H1 styling https://getbootstrap.com/docs/4.3/content/typography/ -->
                 <h1 class="display-4">About Me</h1>
@@ -47,10 +48,12 @@
         </div>
         <!-- Row 2 -->
         <div class="row m-3">
+            <!-- One of two columns -->
             <div class="col-md-4">
                 <!-- Used class img-fluid to make image responsive https://getbootstrap.com/docs/4.3/content/images/ -->
                 <img src="assets/images/profile-pic.jpg" class="img-fluid" alt="Profile picture of creator of website."/>
             </div>
+            <!-- One of two columns -->
             <div class="col-md-8">
                 <p>
                     I grew up thinking I'd be an engineer, which progressed to wanting to engineer medical devices. 
@@ -65,6 +68,7 @@
         </div>
         <!-- Row 3 -->
         <div class="row m-3">
+            <!-- One of one column -->
             <div class="col-md-12">
                 <p>
                     When I'm not working diligently to pursue a new career I enjoy Curling, hanging out with my wife
@@ -80,8 +84,10 @@
     <footer class="fixed-bottom">
         <!-- Used class container-fluid to make footer full width of screen https://getbootstrap.com/docs/4.3/layout/overview/ -->
         <div class="container-fluid">
+            <!-- Row 1 -->
             <div class="row">
                 <!-- Used class text-center to center the text, text-white to make the text white, bg-dark to make the background dark, align-middle to make the text align vertically -->
+                <!-- One of one column -->
                 <div class="col-sm-12 text-center text-white bg-dark align-middle">
                     <!-- Put text in a paragraph to add margin to the text. If it was at any other level in this container it created a gap of white space under the footer. -->
                     <p class="m-3">&copy; Copyright Jake O'Toole</>
