@@ -19,7 +19,8 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- Used class justify-content-end to get links and collapse menu to the right side https://getbootstrap.com/docs/4.3/layout/grid/ -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
               <a class="nav-link" href="index.html">About<span class="sr-only">(current)</span></a>
@@ -34,7 +35,7 @@
         </div>
       </nav>
     <!-- Main container for content of page -->
-    <!-- How to add margin and padding. Note: documentations recommends not to use mt or top-margin https://getbootstrap.com/docs/4.3/utilities/spacing/ -->
+    <!-- How to add margin and padding. Used class m-5. Note: documentations recommends not to use top-margin (class mt-#) https://getbootstrap.com/docs/4.3/utilities/spacing/ -->
     <div class="container m-5">
         <!-- Row 1 -->
         <!-- How to add border https://getbootstrap.com/docs/4.3/utilities/borders/ -->
@@ -47,7 +48,7 @@
         <!-- Row 2 -->
         <div class="row m-3">
             <div class="col-md-4">
-                <!-- How to make image responsive https://getbootstrap.com/docs/4.3/content/images/ -->
+                <!-- Used class img-fluid to make image responsive https://getbootstrap.com/docs/4.3/content/images/ -->
                 <img src="assets/images/profile-pic.jpg" class="img-fluid" alt="Profile picture of creator of website."/>
             </div>
             <div class="col-md-8">
@@ -77,10 +78,11 @@
     </div>
     <!-- Footer. Found out that the bootstrap scripts for javascript are required for this to work. Scripts must be inside of body element. https://getbootstrap.com/docs/4.3/utilities/position/#fixed-bottom-->
     <footer class="fixed-bottom">
-        <!-- How to make footer full width of screen https://getbootstrap.com/docs/4.3/layout/overview/ -->
+        <!-- Used class container-fluid to make footer full width of screen https://getbootstrap.com/docs/4.3/layout/overview/ -->
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-12 text-center  text-white bg-dark align-middle">
+                <!-- Used class text-center to center the text, text-white to make the text white, bg-dark to make the background dark, align-middle to make the text align vertically -->
+                <div class="col-sm-12 text-center text-white bg-dark align-middle">
                     &copy; Copyright Jake O'Toole
                 </div>
             </div>
