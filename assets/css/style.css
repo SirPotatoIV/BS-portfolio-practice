@@ -1,3 +1,4 @@
+/* Followed steps in video, excpet for ruby. Ruby is no longer used for compiling scss. Used open source Scout-App. */
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -4659,7 +4660,7 @@ input[type="button"].btn-block {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 1rem;
+  padding: 0 0;
 }
 
 /* line 28, ../../../web-dev-class/homework/2-homework/BS-portfolio-practice/node_modules/bootstrap/scss/_navbar.scss */
@@ -4676,7 +4677,7 @@ input[type="button"].btn-block {
   display: inline-block;
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
-  margin-right: 1rem;
+  margin-right: 0;
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
