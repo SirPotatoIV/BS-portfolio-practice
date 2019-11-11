@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jake's Portfolio</title>
+    <!-- Code from this point down in header was added by me. -->
+    <!-- Link to CSS code used to reset css as much as possible -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <!-- Link to bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <!-- -dark and bg-secondary used to change color. bottom border with border-bottom. border black with border dark. -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-secondary border-bottom border-dark">
+        <!-- ml-5 used to shift the logo to the right. px-3 used to add padding to the right and left of the text. https://getbootstrap.com/docs/4.3/utilities/spacing/ -->
+        <a class="navbar-brand bg-dark rounded ml-5 px-3" href="index.html">Jake O'Toole</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Used class justify-content-end to get links and collapse menu to the right side https://getbootstrap.com/docs/4.3/layout/grid/ -->
+        <div class="collapse navbar-collapse justify-content-end pr-5" id="navbarNav">
+          <ul class="navbar-nav m-1">
+            <li class="nav-item">
+              <!-- Added border to right with border-right -->
+              <a class="nav-link border-right" href="index.html">About<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <!-- Added border to right with border-right -->
+              <a class="nav-link border-right" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          </div>
+      </nav>
+    <!-- Main container for content of page -->
+    <!-- How to add margin and padding. Used class m-5. Note: documentations recommends not to use top-margin (class mt-#) https://getbootstrap.com/docs/4.3/utilities/spacing/ -->
+    <!-- Made container stay centered at all times using mx-auto -->
+    <div class="container shadow mb-5 bg-secondary mx-auto">
+        <!-- Row 1 -->
+        <!-- How to add border https://getbootstrap.com/docs/4.3/utilities/borders/ -->
+        <div class="row m-3">
+            <!-- One of one column -->
+            <div class="col-md-12 border-bottom border-dark">
+                <!-- Different H1 styling https://getbootstrap.com/docs/4.3/content/typography/ -->
+                <h1 class="display-4">Contact</h1>
+            </div>
+        </div>
+        <!-- Row 2 -->
+        <div class="row m-3">
+            <!-- One of two columns -->
+            <div class="col-md-4">
+                <!-- Used class img-fluid to make image responsive https://getbootstrap.com/docs/4.3/content/images/ -->
+                <img src="assets/images/profile-pic.jpg" class="img-fluid" alt="Profile picture of creator of website."/>
+            </div>
+            <!-- One of two columns -->
+            <div class="col-md-8">
+                <p class="text-black p-2">
+                    I grew up thinking I'd be an engineer, which progressed to wanting to engineer medical devices. 
+                    I went on to get a degree in biomedical engineering and work in the field of medical device R&amp;D 
+                    for 6 years. Over those 6 years I realized I was wrong growing up. The life of an engineer who
+                    works to develop medical devices was not for me. At the age of 29 and after 6 years of giving
+                    engineering a try I decided to quit my job and pursue a career in web development. I am currently
+                    in a 3-month full-time full stack web development bootcamp hoping to find the career that is right
+                    for me.
+                </p>
+            </div>
+        </div>
+        <!-- Row 3 -->
+        <div class="row m-3">
+            <!-- One of one column -->
+            <div class="col-md-12">
+                <p class="text-black">
+                    When I'm not working diligently to pursue a new career I enjoy Curling, hanging out with my wife
+                    and dog, exploring the Twin Cities, and learning how to make physical things. I have hobby aspirations
+                    to learn more about saws, routers, nail guns, CNC's, and all other sorts of tools that could help me make
+                    interesting physical objects, or cause me to loose appendages. I hope to be able to meld together my knowledge
+                    of code and building physical things to make fun and strange projects.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer. Found out that the bootstrap scripts for javascript are required for this to work. Scripts must be inside of body element. https://getbootstrap.com/docs/4.3/utilities/position/#fixed-bottom-->
+    <footer class="fixed-bottom">
+        <!-- Used class container-fluid to make footer full width of screen https://getbootstrap.com/docs/4.3/layout/overview/ -->
+        <div class="container-fluid">
+            <!-- Row 1 -->
+            <div class="row border-top border-dark">
+                <!-- Used class text-center to center the text, text-white to make the text white, bg-dark to make the background dark, align-middle to make the text align vertically -->
+                <!-- One of one column -->
+                <div class="col-sm-12 text-center text-white bg-dark align-middle">
+                    <!-- Put text in a paragraph to add margin to the text. If it was at any other level in this container it created a gap of white space under the footer. -->
+                    <p class="m-3">&copy; Copyright Jake O'Toole</>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Added scripts from bootstrap for javascript. Turns out it needs to be in the body. -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
