@@ -1,4 +1,4 @@
 body {
-        background-image: url(../images/herringbone.png);
+        background-image: url("../images/herringbone.png");
         height: 100%;
 }
