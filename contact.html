@@ -54,23 +54,30 @@
         </div>
         <!-- Row 2 -->
         <div class="row m-3">
-            <!-- One of two columns -->
-            <div class="col-md-4">
-                <!-- Used class img-fluid to make image responsive https://getbootstrap.com/docs/4.3/content/images/ -->
-                <img src="assets/images/profile-pic.jpg" class="img-fluid" alt="Profile picture of creator of website."/>
-            </div>
-            <!-- One of two columns -->
-            <div class="col-md-8">
-                <p class="text-black p-2">
-                    I grew up thinking I'd be an engineer, which progressed to wanting to engineer medical devices. 
-                    I went on to get a degree in biomedical engineering and work in the field of medical device R&amp;D 
-                    for 6 years. Over those 6 years I realized I was wrong growing up. The life of an engineer who
-                    works to develop medical devices was not for me. At the age of 29 and after 6 years of giving
-                    engineering a try I decided to quit my job and pursue a career in web development. I am currently
-                    in a 3-month full-time full stack web development bootcamp hoping to find the career that is right
-                    for me.
-                </p>
-            </div>
+            <form>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Name</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect2">Example multiple select</label>
+                  <select multiple class="form-control" id="exampleFormControlSelect2">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Example textarea</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+              </form>
         </div>
         <!-- Row 3 -->
         <div class="row m-3">
