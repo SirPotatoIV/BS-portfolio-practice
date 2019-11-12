@@ -16,29 +16,40 @@
 <body>
     <!-- Navbar -->
     <!-- -dark and bg-secondary used to change color. bottom border with border-bottom. border black with border dark. -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-secondary border-bottom border-dark">
-        <!-- ml-5 used to shift the logo to the right. px-3 used to add padding to the right and left of the text. https://getbootstrap.com/docs/4.3/utilities/spacing/ -->
-        <a class="navbar-brand bg-dark rounded ml-5 px-3" href="index.html">Jake O'Toole</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Used class justify-content-end to get links and collapse menu to the right side https://getbootstrap.com/docs/4.3/layout/grid/ -->
-        <div class="collapse navbar-collapse justify-content-end pr-5" id="navbarNav">
-          <ul class="navbar-nav m-1">
-            <li class="nav-item">
-              <!-- Added border to right with border-right -->
-              <a class="nav-link border-right" href="index.html">About<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <!-- Added border to right with border-right -->
-              <a class="nav-link border-right" href="portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
-          </div>
-      </nav>
+    <nav class="container-fluid bg-dark">
+        <!-- Row 1 of 1 -->
+        <div class="row mx-md-auto">
+            <!-- Column 1 of 3 -->
+            <!-- Logo for website in top left corner -->
+            <div class="col-md-4 bg-secondary text-center">
+                <h1 class="text-white">Jake O'Toole</h1>
+            </div>
+            <!-- Column 2 of 3 -->
+            <!-- Empty column used to keep spacing between the logo and the links -->
+            <div class="col-md-4">
+                <!-- Empty column -->
+            </div>
+            <!-- Column 3 of 3 -->
+            <div class="col-md-4 align-self-center">
+                <!-- Sub-Row 1 of 1 of Column 3 -->
+                <div class="row justify-content-center">
+                    <!-- Col 1 of 2 of sub-row -->
+                    <div class="col-4 text-right border-right">
+                    <!-- Added border to right with border-right -->
+                        <a class="text-secondary" href="index.html">About<span class="sr-only">(current)</span></a>
+                    </div>
+                    <!-- Col 2 of 2 of sub-row -->
+                    <div class="col-auto text-center border-right">
+                    <!-- Added border to right with border-right -->
+                        <a class="text-white" href="portfolio.html">Portfolio</a>
+                    </div>
+                    <div class="col-4 text-left">
+                        <a class="text-white" href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
     <!-- Main container for content of page -->
     <!-- How to add margin and padding. Used class m-5. Note: documentations recommends not to use top-margin (class mt-#) https://getbootstrap.com/docs/4.3/utilities/spacing/ -->
     <!-- Made container stay centered at all times using mx-auto -->
