@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
     <!-- Link to bootstrap CSS -->
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/mystyle.css"/>
 </head>
 <body>
@@ -25,11 +25,11 @@
         <!-- Used class justify-content-end to get links and collapse menu to the right side https://getbootstrap.com/docs/4.3/layout/grid/ -->
         <div class="collapse navbar-collapse justify-content-end pr-5" id="navbarNav">
           <ul class="navbar-nav m-1">
-            <li class="nav-item">
+            <li class="nav-item active">
               <!-- Added border to right with border-right -->
               <a class="nav-link border-right" href="index.html">About<span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
               <!-- Added border to right with border-right -->
               <a class="nav-link border-right" href="portfolio.html">Portfolio</a>
             </li>
@@ -42,53 +42,47 @@
     <!-- Main container for content of page -->
     <!-- How to add margin and padding. Used class m-5. Note: documentations recommends not to use top-margin (class mt-#) https://getbootstrap.com/docs/4.3/utilities/spacing/ -->
     <!-- Made container stay centered at all times using mx-auto -->
-    <div class="container shadow mb-5 bg-secondary mx-auto pb-3">
+    <div class="container shadow mb-5 bg-secondary mx-auto">
         <!-- Row 1 -->
         <!-- How to add border https://getbootstrap.com/docs/4.3/utilities/borders/ -->
         <div class="row m-3">
             <!-- One of one column -->
             <div class="col-md-12 border-bottom border-dark">
                 <!-- Different H1 styling https://getbootstrap.com/docs/4.3/content/typography/ -->
-                <h1 class="display-4">Portfolio</h1>
+                <h1 class="display-4">About Me</h1>
             </div>
         </div>
         <!-- Row 2 -->
-        <div class="row">
-            <!-- 1 col of 1 in row 2 -->
-            <div class="col-12">
-                <!-- Sub-row 1 -->
-                <div class="row">
-                    <!-- 1 col of 2 sub-row 1 -->
-                    <div class="col-sm-6">
-                        <img src="./assets/images/my-portfolio.png" class="img-fluid" alt="placeholder">
-                    </div>
-                    <!-- 1 col of 2 sub-row 1 -->
-                    <div class="col-sm-6">
-                        <img src="./assets/images/igor-rodrigues-LzqrF2iIkdc-unsplash.jpg" class="img-fluid" alt="placeholder">
-                    </div>
-                </div>
-                <!-- Sub-row 2 -->
-                <div class="row my-2">
-                        <!-- 1 col of 2 sub-row 2 -->
-                        <div class="col-sm-6">
-                            <img src="./assets/images/jason-briscoe-amLfrL8LGls-unsplash.jpg" class="img-fluid" alt="placeholder">
-                        </div>
-                        <!-- 1 col of 2 sub-row 2 -->
-                        <div class="col-sm-6">
-                            <img src="./assets/images/igor-rodrigues-LzqrF2iIkdc-unsplash.jpg" class="img-fluid" alt="placeholder">
-                        </div>
-                    </div>
-                <!-- Sub-row 3 -->
-                <div class="row my-2">
-                        <!-- 1 col of 2 sub-row 2 -->
-                        <div class="col-sm-6">
-                            <img src="./assets/images/jason-briscoe-amLfrL8LGls-unsplash.jpg" class="img-fluid" alt="placeholder">
-                        </div>
-                        <!-- 1 col of 2 sub-row 2 -->
-                        <div class="col-sm-6">
-                            <img src="http://placehold.it/200x200" class="img-fluid" alt="placeholder">
-                        </div>
-                    </div>
+        <div class="row m-3">
+            <!-- One of two columns -->
+            <div class="col-md-4">
+                <!-- Used class img-fluid to make image responsive https://getbootstrap.com/docs/4.3/content/images/ -->
+                <img src="assets/images/profile-pic.jpg" class="img-fluid" alt="Profile picture of creator of website."/>
+            </div>
+            <!-- One of two columns -->
+            <div class="col-md-8">
+                <p class="text-black p-2">
+                    I grew up thinking I'd be an engineer, which progressed to wanting to engineer medical devices. 
+                    I went on to get a degree in biomedical engineering and work in the field of medical device R&amp;D 
+                    for 6 years. Over those 6 years I realized I was wrong growing up. The life of an engineer who
+                    works to develop medical devices was not for me. At the age of 29 and after 6 years of giving
+                    engineering a try I decided to quit my job and pursue a career in web development. I am currently
+                    in a 3-month full-time full stack web development bootcamp hoping to find the career that is right
+                    for me.
+                </p>
+            </div>
+        </div>
+        <!-- Row 3 -->
+        <div class="row m-3">
+            <!-- One of one column -->
+            <div class="col-md-12">
+                <p class="text-black">
+                    When I'm not working diligently to pursue a new career I enjoy Curling, hanging out with my wife
+                    and dog, exploring the Twin Cities, and learning how to make physical things. I have hobby aspirations
+                    to learn more about saws, routers, nail guns, CNC's, and all other sorts of tools that could help me make
+                    interesting physical objects, or cause me to loose appendages. I hope to be able to meld together my knowledge
+                    of code and building physical things to make fun and strange projects.
+                </p>
             </div>
         </div>
     </div>
