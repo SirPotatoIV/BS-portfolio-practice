@@ -6,3 +6,18 @@ body {
 nav {
         border: 1px black solid;
 }
+
+/* used to add title over portfolio images*/
+/* .single-image {
+        position: relative;
+        margin: 0px;
+}
+     */
+/* used to add title over portfolio images and style title*/
+.image-title {
+        position: absolute;
+        bottom: 32px;
+        left: 12px;
+        right: 12px;
+        background-color: salmon; 
+}
