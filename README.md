@@ -10,6 +10,6 @@ Credits: I created this code based on the homework prompt created by Triology Ed
 
 Contributing: I was the only one to work on this project.
 
-Challenges: I struggled early on with the sticky footer due to not adding the bootstrap scripts for the javascript code.
+Challenges: I struggled early on with the sticky footer due to not adding the bootstrap scripts for the javascript code. I also struggled heavily with the navBar. At first I used a navBar from Bootstrap, which worked great. I then decided to try and make a navbar look exactly like the navbar in the homework pictures. Even after being told to use the navBar from bootstrap I still for some reason faught and faught to get it to work. This project has started to teach me to leave things alone if they work and they meet the homework requirements. 
 
 Live site: https://sirpotatoiv.github.io/BS-portfolio-practice/
