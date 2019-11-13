@@ -15,9 +15,10 @@
 </head>
 <body>
     <!-- Navbar -->
-    <!-- -dark and bg-secondary used to change color. bottom border with border-bottom. border black with border dark. -->
+    <!-- bg-dark used to change color -->
     <nav class="container-fluid bg-dark">
         <!-- Row 1 of 1 -->
+        <!-- mx-md-auto adds margin to the left and right column in this row WHEN the screen is medium or larger -->
         <div class="row mx-md-auto">
             <!-- Column 1 of 3 -->
             <!-- Logo for website in top left corner -->
@@ -30,21 +31,25 @@
                 <!-- Empty column -->
             </div>
             <!-- Column 3 of 3 -->
+            <!-- align-self-center used to make the row, which contains the links, in this column centered horizontally -->
             <div class="col-md-4 align-self-center">
                 <!-- Sub-Row 1 of 1 of Column 3 -->
-                <div class="row justify-content-center">
-                    <!-- Col 1 of 2 of sub-row -->
+                <!-- py-2 adds padding to create space between the links and border and the top/bottom of the row -->
+                <div class="row justify-content-center py-2">
+                    <!-- Col 1 of 3 of sub-row -->
                     <div class="col-4 text-right border-right">
                     <!-- Added border to right with border-right -->
-                        <a class="text-secondary" href="index.html">About<span class="sr-only">(current)</span></a>
+                    <a class="text-secondary" href="index.html">About</a>
                     </div>
-                    <!-- Col 2 of 2 of sub-row -->
+                    <!-- Col 2 of 3 of sub-row -->
                     <div class="col-auto text-center border-right">
                     <!-- Added border to right with border-right -->
-                        <a class="text-white" href="portfolio.html">Portfolio</a>
+                        <a class="text-secondary" href="portfolio.html">Portfolio</a>
                     </div>
+                    <!-- Col 3 of 3 of sub-row -->
+                    <!-- The span comes from bootstrap. Bootstrap documentation says this is used to indicate to a screen reader that this is the current page you are in. -->
                     <div class="col-4 text-left">
-                        <a class="text-white" href="contact.html">Contact</a>
+                        <a class="text-white" href="contact.html">Contact<span class="sr-only">(current)</span></a>
                     </div>
                 </div>
             </div>
